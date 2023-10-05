@@ -29,19 +29,16 @@ fieldset {
 }
 .form1 {
     float: left;
-    padding-right: 110px;
-    padding-left: 110px;
+    width: 33.33%;
     background-color: #333947;
 }
 .form2 {
     float: left;
-    padding-right: 110px;
-    padding-left: 110px;
+    width: 33.33%;
     background-color: #333947;
 }
 .form3 {
     float: left;
-    padding-right: 113px;
-    padding-left: 110px;
+    width: 33.33%;
     background-color: #333947;
 }
