@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"href="style.css">
+        <script src="script.js" async></script>
+    </head>
+    <body>
+        <h1>Tyler's Calorie Counter!</h1>
+        <fieldset>
+            <legend>Appetizer:</legend>
+            <div class="cals">
+                <p>Calories from Fat: </p>
+                <p id="bfat"></p><br>
+                <p>Calories from Carbs: </p>
+                <p id="bcarb"></p><br>
+                <p>Calories from Protein: </p>
+                <p id="bprot"></p><br>
+                <p>Total Calories: </p>
+                <p id="btotal"></p>
+            </div>
+            <form>
+                <p>Grams of Fat:</p>
+                <input type="number"name="bfatf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(bfatf, 'bfat'),
+                total(bfatf, bcarbf, bprotf, 'btotal')">
+                <p>Grams of Carbs:</p>
+                <input type="number"name="bcarbf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(bcarbf, 'bcarb')
+                ,total(bfatf, bcarbf, bprotf, 'btotal')">
+                <p>Grams of Protein:</p>
+                <input type="number"name="bprotf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(bprotf, 'bprot'),
+                total(bfatf, bcarbf, bprotf, 'btotal')">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Entree:</legend>
+            <div class="cals">
+                <p>Calories from Fat:</p>
+                <p id="efat"></p><br>
+                <p>Calories from Carbs:</p>
+                <p id="ecarb"></p><br>
+                <p>Calories from Protein:</p>
+                <p id="eprot"></p><br>
+                <p>Total Calories: </p>
+                <p id="etotal"></p>
+            </div>
+            <form>
+                <p>Grams of Fat:</p>
+                <input type="number"name="efatf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(efatf, 'efat'),
+                total(efatf, ecarbf, eprotf, 'etotal')">
+                <p>Grams of Carbs:</p>
+                <input type="number"name="ecarbf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(ecarbf, 'ecarb'),
+                total(efatf, ecarbf, eprotf, 'etotal')">
+                <p>Grams of Protein:</p>
+                <input type="number"name="eprotf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(eprotf, 'eprot'),
+                total(efatf, ecarbf, eprotf, 'etotal')">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Dessert:</legend>
+            <div class="cals">
+                <p>Calories from Fat:</p>
+                <p id="dfat"></p><br>
+                <p>Calories from Carbs:</p>
+                <p id="dcarb"></p><br>
+                <p>Calories from Protein:</p>
+                <p id="dprot"></p><br>
+                <p>Total Calories: </p>
+                <p id="dtotal"></p>
+            </div>
+            <form>
+                <p>Grams of Fat:</p>
+                <input type="number"name="dfatf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(dfatf, 'dfat'),
+                total(dfatf, dcarbf, dprotf, 'dtotal')">
+                <p>Grams of Carbs:</p>
+                <input type="number"name="dcarbf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(dcarbf, 'dcarb'),
+                total(dfatf, dcarbf, dprotf, 'dtotal')">
+                <p>Grams of Protein:</p>
+                <input type="number"name="dprotf"value=>
+                <input type="button"name="button"value="Click"
+                onClick="retrieve(dprotf, 'dprot'),
+                total(dfatf, dcarbf, dprotf, 'dtotal')">
+            </form>
+        </fieldset>
+    </body>
+</html>
