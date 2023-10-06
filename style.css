@@ -47,6 +47,7 @@ fieldset {
 }
 input[type="number"], textarea {
     background-color: #292e3a;  
+    color: #93b2ff;
 }
 /*remove number type form arrows*/
 input::-webkit-outer-spin-button,
